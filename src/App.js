@@ -1,14 +1,11 @@
 import './App.css';
 import React, { useState } from 'react'
-import SearchBar from './components/SearchBar';
-import ProductTable from './components/ProductTable';
+import ProductsPage from './components/ProductsPage';
 
 function App() {
   return (
     <div className="App">
-      {/* TO BE USED */}
-      <SearchBar></SearchBar>
-      <ProductTable></ProductTable>
+    <ProductsPage />
     </div>
   );
 }
