@@ -10,7 +10,8 @@ export default function ProductTable(props) {
           <th>Name</th>
           <th>Price</th>
         </tr>
-        {products.map(product => {
+        {products
+        .map(product => {
           return <ProductRow product={product} key={product.id}/>
         })}
       </table>
