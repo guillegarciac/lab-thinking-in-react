@@ -8,7 +8,7 @@ export default function ProductsPage() {
   const [checked, setChecked] = useState(true); //true to ensure all products are shown to the user by default. Otherwise, handleStockSearch() would be triggered with "checked=false".
   
   const handleSearch = (str) => {
-    if (str.target.value === "") {
+    if (str.target.value === "") { //to reset the search when empty
       setProducts(jsonData)
     } else {
       const filteredProducts = products.filter(product => product.name.toLowerCase().includes(str.target.value.toLocaleLowerCase()))

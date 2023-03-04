@@ -4,7 +4,7 @@ export default function ProductRow(props) {
   const {product: {category, price, inStock, name, id}} = props;
   const stockStyle = {color: inStock ? 'black': 'red'}
   return (
-    <tr>
+    <tr className="row">
       <td style={stockStyle}>{name}</td>
       <td>{price}</td>
     </tr>
